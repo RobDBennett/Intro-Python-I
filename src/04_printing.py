@@ -15,4 +15,7 @@ z = "I like turtles!"
 # Use the 'format' string method to print the same thing
 
 # Finally, print the same thing using an f-string
-print(f'The value of x is: {x} . The value of y is: {y} . The value of z is: {z}')
+print(f'The value of x is: {x} . The value of y is: {round(y,2)} . The value of z is: {z}')
+print("x is %s, y is % 1.2f, z is %s" %(x,y,z))
+s = "x is {a}, y is {b:.2f}, z is {c}"
+print(s.format(a=x, b=y, c=z))

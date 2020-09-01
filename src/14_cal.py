@@ -28,5 +28,24 @@ it should use today’s date to get the month and year.
 """
 
 import sys
-import calendar
-from datetime import datetime
+import calendar as c
+from datetime import datetime as dt
+
+args = sys.argv
+cal = c.TextCalendar()
+instructions = f'Put in a month and year. The month needs to be an integer please.'
+year = dt.now().year
+month = dt.now().month
+
+#breakpoint()
+if len(sys.argv) == 1: # No input, print current
+  print(year, month)
+  cal.prmonth(year, month)
+elif len(sys.argv) == 2: # Just month
+  month, year = int(args[1]), 2020
+  cal.prmonth(themonth=month, theyear=year)
+elif len(sys.argv) == 3: # Year and month
+  month, year = int(args[1]), int(args[2])
+  cal.prmonth(theyear=year, themonth=month)
+else:
+  print(instructions)
