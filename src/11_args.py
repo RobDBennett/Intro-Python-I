@@ -27,11 +27,11 @@ a = [7, 6, 5, 4]
 
 # How do you have to modify the f2 call below to make this work?
 
-def f2(list):
-    x = sum(list)
-    return x
+#def f2(list):
+#    x = sum(list)
+#    return x
 
-print(f2(a))    # Should print 22
+print(f2(*a))    # Should print 22
 
 # Write a function f3 that accepts either one or two arguments. If one argument,
 # it returns that value plus 1. If two arguments, it returns the sum of the

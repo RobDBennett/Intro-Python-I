@@ -12,4 +12,4 @@ num = int(num)
 
 # Print out "Even!" if the number is even. Otherwise print "Odd"
 
-is_even(num)
+print(is_even(num))
