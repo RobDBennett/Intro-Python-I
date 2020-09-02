@@ -42,7 +42,7 @@ if len(sys.argv) == 1: # No input, print current
   print(year, month)
   cal.prmonth(year, month)
 elif len(sys.argv) == 2: # Just month
-  month, year = int(args[1]), 2020
+  month = int(args[1]) 
   cal.prmonth(themonth=month, theyear=year)
 elif len(sys.argv) == 3: # Year and month
   month, year = int(args[1]), int(args[2])
